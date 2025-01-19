@@ -54,7 +54,7 @@
 import React from "react";
 import { Box, Drawer, List, ListItem, ListItemText, Toolbar, Typography } from "@mui/material";
 
-const drawerWidth = 200; // Adjusted width
+const drawerWidth = 200; // Adjust width as needed
 
 const DrawerMenu: React.FC = () => {
   const drawer = (
@@ -85,10 +85,10 @@ const DrawerMenu: React.FC = () => {
         flexShrink: 0,
         "& .MuiDrawer-paper": {
           width: drawerWidth,
-          height: "50vh", // Adjust the height to avoid overlapping the footer
+          height: "50vh", // Adjusted height to avoid overlapping footer
           boxSizing: "border-box",
         },
-        display: { xs: "none", sm: "block" },
+        display: { xs: "none", sm: "block" }, // Hide on smaller screens
       }}
     >
       {drawer}

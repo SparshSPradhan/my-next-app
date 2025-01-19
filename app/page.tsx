@@ -74,8 +74,6 @@
 
 
 
-
-
 "use client";
 
 import React from "react";
@@ -102,22 +100,22 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center", // Center content horizontally
+          alignItems: "center",
           flexGrow: 1,
-          paddingTop: "80px", // Add padding to ensure content doesn't overlap header
+          paddingTop: "80px",
         }}
       >
         <Box
           sx={{
             display: "flex",
-            width: "70%", // Increase the width of the box for the content area (adjust this value)
-            maxWidth: "1200px", // Optional: Set a max width for larger screens
-            border: "1px solid #ddd", // Optional: Add border for better visibility
-            boxShadow: 3, // Optional: Add shadow for aesthetics
-            borderRadius: 2, // Optional: Add rounded corners
-            backgroundColor: "#fff", // Optional: Set background color
-            padding: 3, // Increase the padding to give more space around the content
-            height: "calc(100vh - 80px)", // Adjust this height for content box
+            width: "70%",
+            maxWidth: "1200px",
+            border: "1px solid #ddd",
+            boxShadow: 3,
+            borderRadius: 2,
+            backgroundColor: "#fff",
+            padding: 3,
+            height: "calc(100vh - 80px)",
           }}
         >
           {/* Left Panel */}
@@ -131,7 +129,7 @@ export default function Home() {
         </Box>
       </Box>
 
-      {/* Footer - This will always stay at the bottom */}
+      {/* Footer */}
       <Footer />
     </Box>
   );
